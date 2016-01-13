@@ -1,0 +1,26 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified \" && exit 1",
+    "start": "gulp serve"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "latest",
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "latest",
+    "gulp-browserify": "^0.5.0",
+    "gulp-concat": "^2.4.0",
+    "gulp-connect": "^2.0.6",
+    "gulp-less": "latest",
+    "gulp-open": "^0.2.8",
+    "gulp-react": "^1.0.1",
+    "jquery": "^2.2.0",
+    "react": "^0.11.1",
+    "reactify": "^0.14.0"
+  }
+}
