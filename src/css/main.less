@@ -1,11 +1,66 @@
-h1 {
-	color: red;
+
+
+@main_red: #E94646;
+
+button { outline: none; }
+
+#app {
+	.update_btn {
+		text-align: center;
+		text-transform: uppercase;
+		border-radius: 5px;
+		background: green;
+		cursor: pointer;
+		transition: all .1s ease;
+		margin-bottom: 10px;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: white;
+		padding: 10px 0;	
+		&:hover { background: darken(green, 10%); }
+		&:active { background: darken(green, 20%); }
+	}
 }
-.badge { 
-	background: #5cb85c;
-	border-radius: 5px; 
+ol{
+	padding: 0;
+	margin: 0;
+	li {
+		margin-bottom: 10px;
+		font-size: 30px;
+		font-weight: bold;
+		background: #DADADA;
+		border-radius: 5px;
+		padding: 0 10px;
+		transition: all .3s ease;
+		.buttons {
+			float: right;
+			._check{
+				color: green;
+				&:hover { color: darken(green, 10%); }
+				&:active{ color: darken(green, 20%); }
+			}
+			i { 
+				cursor: pointer;
+				color: @main_red; 
+				&:hover { color: darken(@main_red, 10%); }
+				&:active { color: darken(@main_red, 20%); }
+			}
+		}
+	}
 }
-.pull-right { 
-	position: relative;
-	bottom: 10px;
+
+.new_item_from {
+	margin-bottom: 10px;
+	 input {
+	 	padding: 10px;
+	 	width: 100%;
+	 	border-radius: 5px;
+	 	border: 1px solid #A4A4A4;
+	 }
+	 button { 
+	 	margin: 10px 0;
+	 	display: block;
+	 	width: 100%; 
+	 }
 }

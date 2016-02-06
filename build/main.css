@@ -1,12 +1,76 @@
-h1 {
-  color: red;
+button {
+  outline: none;
 }
-.badge {
-  background: #5cb85c;
+#app .update_btn {
+  text-align: center;
   -webkit-border-radius: 5px;
           border-radius: 5px;
+  background: green;
+  cursor: pointer;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  padding: 10px 0;
 }
-.pull-right {
-  position: relative;
-  bottom: 10px;
+#app .update_btn:hover {
+  background: #004d00;
+}
+#app .update_btn:active {
+  background: #001a00;
+}
+ol {
+  padding: 0;
+  margin: 0;
+}
+ol li {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  background: #DADADA;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 0 10px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+ol li .buttons {
+  float: right;
+}
+ol li .buttons ._check {
+  color: green;
+}
+ol li .buttons ._check:hover {
+  color: #004d00;
+}
+ol li .buttons ._check:active {
+  color: #001a00;
+}
+ol li .buttons i {
+  cursor: pointer;
+  color: #E94646;
+}
+ol li .buttons i:hover {
+  color: #e11b1b;
+}
+ol li .buttons i:active {
+  color: #b41515;
+}
+.new_item_from {
+  margin-bottom: 10px;
+}
+.new_item_from input {
+  padding: 10px;
+  width: 100%;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #A4A4A4;
+}
+.new_item_from button {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
 }
