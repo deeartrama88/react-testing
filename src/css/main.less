@@ -1,8 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic);
 
+body { font-family: 'Ubuntu', sans-serif; color: #2D2D2D; }
 
 @main_red: #E94646;
 
 button { outline: none; }
+.form_open_btn {
+	width: 100%;
+	margin-bottom: 10px;
+}
 
 #app {
 	.update_btn {
@@ -14,7 +20,6 @@ button { outline: none; }
 		transition: all .1s ease;
 		margin-bottom: 10px;
 		font-size: 20px;
-		text-transform: uppercase;
 		font-weight: bold;
 		color: white;
 		padding: 10px 0;	
@@ -27,14 +32,18 @@ ol{
 	margin: 0;
 	li {
 		margin-bottom: 10px;
-		font-size: 30px;
+		font-size: 25px;
 		font-weight: bold;
-		background: #DADADA;
+		background: #C1C1C1;
 		border-radius: 5px;
 		padding: 0 10px;
+		position: relative;
+		padding-right: 80px;
 		transition: all .3s ease;
 		.buttons {
-			float: right;
+			position: absolute;
+			top: 0;
+			right: 10px;
 			._check{
 				color: green;
 				&:hover { color: darken(green, 10%); }
@@ -43,8 +52,21 @@ ol{
 			i { 
 				cursor: pointer;
 				color: @main_red; 
+				padding-left: 5px;
 				&:hover { color: darken(@main_red, 10%); }
 				&:active { color: darken(@main_red, 20%); }
+			}
+			i.fa-pencil { 
+				color: #5555DA;
+				&:hover { color: darken(#5555DA, 10%); }
+				&:active { color: darken(#5555DA, 20%); }
+			}
+		}
+		.change_title_todo {
+			textarea{ width: 70%; }
+			.buttons_change {
+				padding-bottom: 10px;
+				button{ margin-right: 10px; }
 			}
 		}
 	}
@@ -52,6 +74,10 @@ ol{
 
 .new_item_from {
 	margin-bottom: 10px;
+	padding: 10px;
+	background: #E1E1E1;
+	border-radius: 5px;
+	border: 1px solid #999999;
 	 input {
 	 	padding: 10px;
 	 	width: 100%;

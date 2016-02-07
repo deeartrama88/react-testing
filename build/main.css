@@ -1,8 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic);
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #2D2D2D;
+}
 button {
   outline: none;
 }
+.form_open_btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
 #app .update_btn {
   text-align: center;
+  text-transform: uppercase;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   background: green;
@@ -11,7 +21,6 @@ button {
   transition: all .1s ease;
   margin-bottom: 10px;
   font-size: 20px;
-  text-transform: uppercase;
   font-weight: bold;
   color: white;
   padding: 10px 0;
@@ -28,17 +37,21 @@ ol {
 }
 ol li {
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
-  background: #DADADA;
+  background: #C1C1C1;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   padding: 0 10px;
+  position: relative;
+  padding-right: 80px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 ol li .buttons {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
 ol li .buttons ._check {
   color: green;
@@ -52,6 +65,7 @@ ol li .buttons ._check:active {
 ol li .buttons i {
   cursor: pointer;
   color: #E94646;
+  padding-left: 5px;
 }
 ol li .buttons i:hover {
   color: #e11b1b;
@@ -59,8 +73,31 @@ ol li .buttons i:hover {
 ol li .buttons i:active {
   color: #b41515;
 }
+ol li .buttons i.fa-pencil {
+  color: #5555DA;
+}
+ol li .buttons i.fa-pencil:hover {
+  color: #2d2dcf;
+}
+ol li .buttons i.fa-pencil:active {
+  color: #2424a5;
+}
+ol li .change_title_todo textarea {
+  width: 70%;
+}
+ol li .change_title_todo .buttons_change {
+  padding-bottom: 10px;
+}
+ol li .change_title_todo .buttons_change button {
+  margin-right: 10px;
+}
 .new_item_from {
   margin-bottom: 10px;
+  padding: 10px;
+  background: #E1E1E1;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #999999;
 }
 .new_item_from input {
   padding: 10px;
